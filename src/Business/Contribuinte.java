@@ -26,6 +26,13 @@ public class Contribuinte {
         this.totalRend = totalRend;
         this.contriOficial = contriOficial;
     }
+    
+    public Contribuinte (String nome, String cpf, int idade, int numDepen) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.idade = idade;
+        this.numDepen = numDepen;
+    }
 
     public String getNome() {
         return nome;
