@@ -16,8 +16,8 @@ public class DeclaracaoCompleta extends DeclaracaoAbstract{
     }    
     
     @Override
-    public double calculoContribuicao(Contribuinte contribuinte) {
-        double base = super.calculoBase(contribuinte);
+    public double calculoContribuicao() {
+        double base = super.calculoBase(super.getContribuinte());
         double valorDesconto;
                 
         if(super.getContribuinte().getIdade() < 65){
@@ -52,5 +52,5 @@ public class DeclaracaoCompleta extends DeclaracaoAbstract{
             super.setImpostoPago((((DeclaracaoAbstract.FAIXA_12) * 0.15) + ((base - DeclaracaoAbstract.FAIXA_24) * 0.275)));
             return super.getImpostoPago();
         }
-    }    
+    }        
 }

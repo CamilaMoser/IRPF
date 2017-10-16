@@ -145,8 +145,8 @@ public class Interface extends javax.swing.JFrame {
                 System.out.println(contriOficial);
                 contribuinte = new Contribuinte(nome, cpf, idade, 
                         numDepen, totalRend, contriOficial);
-                declaracaoCompleta = new DeclaracaoCompleta(contribuinte);
-                cadastroDeclaracao.incluirDeclaracao(declaracaoCompleta);                
+                declaracaoCompleta = new DeclaracaoCompleta(contribuinte);                ;
+                cadastroDeclaracao.incluirDeclaracao(declaracaoCompleta);
             }
             sc.close();
             System.out.println(cadastroDeclaracao.toString());

@@ -25,7 +25,7 @@ public class CalculoDeclaracaoSimplificadaTests {
     public void calculoDeclaracaoBaseInferior12000() {
         contribuinte = new Contribuinte("João", "940.309.840-61", 30, 2);
         declaracaoSimplificada = new DeclaracaoSimplificada(contribuinte);
-        double actual = declaracaoSimplificada.calculoContribuicao(contribuinte);
+        double actual = declaracaoSimplificada.calculoContribuicao();
         double expected = 0.0;
         assertEquals(expected, actual, 0.0);
     }
@@ -35,7 +35,7 @@ public class CalculoDeclaracaoSimplificadaTests {
     public void calculoDeclaracaoBase12000() {
         contribuinte = new Contribuinte("João", "940.309.840-61", 30, 2);
         declaracaoSimplificada = new DeclaracaoSimplificada(contribuinte);
-        double actual = declaracaoSimplificada.calculoContribuicao(contribuinte);
+        double actual = declaracaoSimplificada.calculoContribuicao();
         double expected = 0.0;
         assertEquals(expected, actual, 0.0);
     }
@@ -45,7 +45,7 @@ public class CalculoDeclaracaoSimplificadaTests {
     public void calculoDeclaracaoInferior24000() {
         contribuinte = new Contribuinte("João", "940.309.840-61", 30, 2, 26000.0, 2001.0);
         declaracaoSimplificada = new DeclaracaoSimplificada(contribuinte);
-        double actual = declaracaoSimplificada.calculoContribuicao(contribuinte);
+        double actual = declaracaoSimplificada.calculoContribuicao();
         double expected = 1619.8574999999998;
         assertEquals(expected, actual, 0.0);
     }
@@ -55,7 +55,7 @@ public class CalculoDeclaracaoSimplificadaTests {
     public void calculoDeclaracao24000() {
         contribuinte = new Contribuinte("João", "940.309.840-61", 30, 2, 26000.0, 2000.0);
         declaracaoSimplificada = new DeclaracaoSimplificada(contribuinte);
-        double actual = declaracaoSimplificada.calculoContribuicao(contribuinte);
+        double actual = declaracaoSimplificada.calculoContribuicao();
         double expected = 1620.0;
         assertEquals(expected, actual, 0.0);        
     }
@@ -65,7 +65,7 @@ public class CalculoDeclaracaoSimplificadaTests {
     public void calculoDeclaracaoSuperior24000() {
         contribuinte = new Contribuinte("João", "940.309.840-61", 30, 2, 26000.0, 100.0);
         declaracaoSimplificada = new DeclaracaoSimplificada(contribuinte);
-        double actual = declaracaoSimplificada.calculoContribuicao(contribuinte);
+        double actual = declaracaoSimplificada.calculoContribuicao();
         double expected = 1966.375;
         assertEquals(expected, actual, 0.0);
     }

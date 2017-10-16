@@ -39,7 +39,7 @@ abstract class DeclaracaoAbstract implements DeclaracaoInterface{
         return contribuinte.getTotalRend() - contribuinte.getContriOficial();
     }
     
-    public abstract double calculoContribuicao(Contribuinte contribuinte);
+    public abstract double calculoContribuicao();
 
     @Override
     public String toString() {

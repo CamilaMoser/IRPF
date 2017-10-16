@@ -21,5 +21,5 @@ public interface DeclaracaoInterface {
     
     public double calculoBase(Contribuinte contribuinte);
     
-    public abstract double calculoContribuicao(Contribuinte contribuinte);    
+    public abstract double calculoContribuicao();    
 }

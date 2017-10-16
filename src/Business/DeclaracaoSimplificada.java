@@ -16,8 +16,8 @@ public class DeclaracaoSimplificada extends DeclaracaoAbstract {
     }
 
     @Override
-    public double calculoContribuicao(Contribuinte contribuinte) {
-        double base = super.calculoBase(contribuinte);
+    public double calculoContribuicao() {
+        double base = super.calculoBase(super.getContribuinte());
         double valorDesconto = (base * 0.05);
         base -= valorDesconto;
 

@@ -23,7 +23,8 @@ public class CadastroDeclaracao {
         return declaracoes;
     }
     
-    public void incluirDeclaracao(DeclaracaoInterface declaracao){
+    public void incluirDeclaracao(DeclaracaoInterface declaracao){        
+        declaracao.calculoContribuicao();
         declaracoes.add(declaracao);
     }
 
