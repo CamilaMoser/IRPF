@@ -5,7 +5,7 @@
  */
 package Persistence;
 
-import Business.Declaracao;
+import Business.*;
 import java.util.ArrayList;
 
 /**
@@ -13,17 +13,17 @@ import java.util.ArrayList;
  * @author Camila
  */
 public class CadastroDeclaracao {
-    private ArrayList<Declaracao> declar;
+    private ArrayList<DeclaracaoInterface> declaracoes;
     
     public CadastroDeclaracao(){
-        declar = new ArrayList<>();
+        declaracoes = new ArrayList<>();
     }
     
-    public ArrayList<Declaracao> getDeclar(){
-        return declar;
+    public ArrayList<DeclaracaoInterface> getDeclaracoes(){
+        return declaracoes;
     }
     
-    public void incluirDeclaracao(Declaracao declaracao){
-        
+    public void incluirDeclaracao(DeclaracaoInterface declaracao){
+        declaracoes.add(declaracao);
     }
 }

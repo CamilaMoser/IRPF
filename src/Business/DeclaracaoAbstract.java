@@ -9,7 +9,7 @@ package Business;
  *
  * @author Lucas
  */
-abstract class DeclaracaoAbstract {    
+abstract class DeclaracaoAbstract implements DeclaracaoInterface{    
     private double impostoPago = 0.0;
     public static final double FAIXA_12 = 12000.0;
     public static final double FAIXA_24 = 24000.0;
