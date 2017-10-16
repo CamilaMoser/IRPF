@@ -26,4 +26,15 @@ public class CadastroDeclaracao {
     public void incluirDeclaracao(DeclaracaoInterface declaracao){
         declaracoes.add(declaracao);
     }
+
+    @Override
+    public String toString() {
+        String str = "";
+        for (DeclaracaoInterface declaracao : declaracoes) {
+            str += declaracao.toString() + "\n";
+        }
+        return str;
+    }
+    
+    
 }

@@ -40,4 +40,9 @@ abstract class DeclaracaoAbstract implements DeclaracaoInterface{
     }
     
     public abstract double calculoContribuicao(Contribuinte contribuinte);
+
+    @Override
+    public String toString() {
+        return "ImpostoPago=" + impostoPago + ", Contribuinte=" + contribuinte + '}';
+    }
 }

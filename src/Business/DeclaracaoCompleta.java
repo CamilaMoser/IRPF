@@ -46,7 +46,8 @@ public class DeclaracaoCompleta extends DeclaracaoAbstract{
         if (base <= DeclaracaoAbstract.FAIXA_12){
             return super.getImpostoPago();
         }else if (base > DeclaracaoAbstract.FAIXA_12 && base < DeclaracaoAbstract.FAIXA_24){
-            return ((base - DeclaracaoAbstract.FAIXA_12) * 0.15);
+            super.setImpostoPago(((base - DeclaracaoAbstract.FAIXA_12) * 0.15));
+            return super.getImpostoPago();
         }else{
             super.setImpostoPago((((DeclaracaoAbstract.FAIXA_12) * 0.15) + ((base - DeclaracaoAbstract.FAIXA_24) * 0.275)));
             return super.getImpostoPago();
