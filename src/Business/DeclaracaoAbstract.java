@@ -43,6 +43,6 @@ abstract class DeclaracaoAbstract implements DeclaracaoInterface{
 
     @Override
     public String toString() {
-        return "ImpostoPago=" + impostoPago + ", Contribuinte=" + contribuinte + '}';
+        return "Imposto Pago: " + impostoPago + ",\nContribuinte: \n" + contribuinte ;
     }
 }

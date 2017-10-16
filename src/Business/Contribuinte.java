@@ -84,9 +84,9 @@ public class Contribuinte {
 
     @Override
     public String toString() {
-        return "Contribuinte{" + "Nome:" + nome + ", CPF:" + cpf + ", Idade:" + idade 
-                + ", Número de Dependentes:" + numDepen + ", Total de Rendimentos:" 
-                + totalRend + ", Contribuição Previdenciária Oficial:" + contriOficial + '}';
+        return "[Nome: " + nome + ",\n CPF: " + cpf + ",\n Idade: " + idade 
+                + ",\n Número de Dependentes: " + numDepen + ",\n Total de Rendimentos: " 
+                + totalRend + ",\n Contribuição Previdenciária Oficial: " + contriOficial + ']';
     }
     
     

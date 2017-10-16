@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Camila
+ * @author Camila & Lucas
  */
 public class CadastroDeclaracao {
     private ArrayList<DeclaracaoInterface> declaracoes;
